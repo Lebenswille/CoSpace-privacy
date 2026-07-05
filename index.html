@@ -19,12 +19,14 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
         }
         h1 {
             color: #111;
             font-size: 28px;
             border-bottom: 2px solid #eaeaea;
             padding-bottom: 10px;
+            margin-right: 80px;
         }
         h2 {
             color: #222;
@@ -38,6 +40,20 @@
         ul {
             padding-left: 20px;
         }
+        .lang-switch {
+            position: absolute;
+            top: 45px;
+            right: 40px;
+        }
+        .lang-switch a {
+            color: #007aff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .lang-switch a:hover {
+            text-decoration: underline;
+        }
         .footer {
             margin-top: 50px;
             text-align: center;
@@ -46,10 +62,24 @@
             border-top: 1px solid #eaeaea;
             padding-top: 20px;
         }
+        @media (max-width: 600px) {
+            .lang-switch {
+                position: static;
+                display: block;
+                margin-bottom: 20px;
+            }
+            h1 {
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="lang-switch">
+            <a href="en.html">English</a>
+        </div>
+        
         <h1>CoSpace 隐私政策</h1>
         <p>更新日期：2026年6月29日</p>
         
@@ -75,7 +105,7 @@
 
         <h2>4. 联系我们</h2>
         <p>如果您对本隐私政策或数据处理有任何疑问，请通过以下方式联系我们：</p>
-        <p>电子邮箱：<a href="mailto:libinpang@gmail.com">libin.pang@icloud.com</a></p>
+        <p>电子邮箱：<a href="mailto:libin.pang@icloud.com">libin.pang@icloud.com</a></p>
 
         <div class="footer">
             <p>&copy; 2026 Libin Pang. All rights reserved.</p>
